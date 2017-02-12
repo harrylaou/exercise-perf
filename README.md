@@ -1,7 +1,7 @@
 Performance exercise
 =========================
 
-This repo contains some exercises to help you some performance optimizations in React
+This repo contains some exercises to help you learn some performance optimizations in React
 
 ## How to install
 
