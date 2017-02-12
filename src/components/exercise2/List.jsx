@@ -1,5 +1,4 @@
 import React from 'react'
-import { findDOMNode } from 'react-dom'
 
 class List extends React.Component {
   constructor() {
@@ -11,10 +10,10 @@ class List extends React.Component {
   }
 
   componentDidMount() {
-    console.log('aaaa', this.wrapper.clientHeight)
+    console.log('clientHeight', this.wrapper.clientHeight)
 
     this.setState({
-      availableHeight: findDOMNode(this).clientHeight
+      availableHeight: this.wrapper.clientHeight
     })
   }
 
