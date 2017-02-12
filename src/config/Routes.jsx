@@ -2,8 +2,7 @@ import React from 'react'
 import { Route } from 'react-router'
 import TodoList1 from '../components/example/TodoList'
 import TodoList2 from '../components/exercise1/TodoList'
-// import Windowing from '../components/exercise2'
-import Windowing from '../components/solution2'
+import Windowing from '../components/exercise2'
 import App from '../components/APP'
 
 const Routes = (
