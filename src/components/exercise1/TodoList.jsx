@@ -21,7 +21,7 @@ class TodoList extends React.Component{
   }
 
   updateItem = (item, isDone) => {
-
+    // https://facebook.github.io/react/docs/react-component.html#forceupdate
   }
 
   handleSubmit = (e) => {
