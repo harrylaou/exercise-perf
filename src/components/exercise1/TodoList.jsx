@@ -25,8 +25,26 @@ class TodoList extends React.Component{
   }
 
   handleSubmit = (e) => {
+     e.preventDefault()
 
-  }
+     const item = {
+       key: ++this.guid,
+       text: e.target.elements[0].value,
+       isDone: false
+     }
+
+     e.target.reset()
+
+     Perf.start()
+
+     this.setState({
+       items: [ item ].concat(this.state.items)
+     }, () => {
+       Perf.stop()
+       //Perf.printWasted()
+       Perf.printInclusive()
+     })
+   }
 
   componentDidMount() {
      this.input.focus()
